@@ -306,13 +306,13 @@
                 throw new AmazonClientException(errorMessage);
             }
 
-            if (attributes.Count > SQSExtendedClientConstants.MAX_ALLOWED_ATTRIBUTES)
-            {
-                var errorMessage = string.Format("Number of message attributes [{0}] ] exceeds the maximum allowed for large-payload messages [{1}]",
-                    attributes.Count,
-                    SQSExtendedClientConstants.MAX_ALLOWED_ATTRIBUTES);
-                throw new AmazonClientException(errorMessage);
-            }
+            // if (attributes.Count > SQSExtendedClientConstants.MAX_ALLOWED_ATTRIBUTES)
+            // {
+            //     var errorMessage = string.Format("Number of message attributes [{0}] ] exceeds the maximum allowed for large-payload messages [{1}]",
+            //         attributes.Count,
+            //         SQSExtendedClientConstants.MAX_ALLOWED_ATTRIBUTES);
+            //     throw new AmazonClientException(errorMessage);
+            // }
 
             if (attributes.TryGetValue(SQSExtendedClientConstants.RESERVED_ATTRIBUTE_NAME, out _))
             {
