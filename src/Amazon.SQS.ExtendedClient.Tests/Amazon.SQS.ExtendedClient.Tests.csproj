@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net45</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <IsPackable>false</IsPackable>
+    <Configurations>Debug;Release;Package</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFrameworkVersion)' == 'net45'">

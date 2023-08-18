@@ -1,7 +1,8 @@
-﻿namespace Amazon.SQS.ExtendedClient
+﻿using Amazon.S3;
+
+namespace Amazon.SQS.ExtendedClient
 {
     using Runtime;
-    using S3;
 
     public class ExtendedClientConfiguration
     {
